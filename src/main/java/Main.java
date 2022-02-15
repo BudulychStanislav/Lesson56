@@ -5,7 +5,7 @@ public class Main {
         Flower[] bucket = new Flower[3];
         bucket[0] = new Roza(25, 'Red');
         bucket[2] = new Tulpan(20, 'Yellow');
-        bucket[1] = new Romashka(15, 'White');0
+        bucket[1] = new Romashka(15, 'White');
     }
 }
 
@@ -71,6 +71,12 @@ class Roza extends Flower{
 
 class Tulpan extends Flower{
     public Tulpan(int price, String color){
+        super(price,color);
+    }
+}
+
+class Some extends Flower{
+    public Some(int price, String color){
         super(price,color);
     }
 }
